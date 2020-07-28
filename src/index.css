@@ -1,13 +1,71 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  margin-top: 25%;
+  /*border: 1px solid black;*/
+  transform: translateY(-50%);
+
 }
+
+h1{
+  font-size: 4rem;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.to-do-content, .no-to-do-content{
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  cursor: pointer;
+}
+
+.to-do-content:hover{
+  transform: scale(1.05);
+  border: 1px solid gray;
+}
+
+.to-do-content:first-child, .no-to-do-content:first-child{
+  border-top: 1px solid gray;
+}
+
+.no-to-do-content{
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.form{
+  margin-bottom: 30px;
+
+  width: 100%;
+}
+
+.form form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form input{
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+
+
+
